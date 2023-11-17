@@ -1,2 +1,3 @@
 ### Proyecto:  aplicación To-Do.
-### Una aplicación "To-Do" es un tipo de aplicación diseñada para ayudar a los usuarios a organizar y realizar un seguimiento de sus tareas y actividades pendientes. 
+### Una aplicación "To-Do" es un tipo de aplicación diseñada para ayudar a los usuarios a organizar y realizar un seguimiento de sus tareas y actividades pendientes.
+### Proporciona una interfaz fácil de usar para agregar, editar y eliminar tareas, así como funciones adicionales para organizar y priorizar dichas tareas. 
