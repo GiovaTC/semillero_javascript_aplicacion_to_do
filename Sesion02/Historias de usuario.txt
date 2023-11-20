@@ -1,0 +1,30 @@
+Historia de Usuario:
+Como usuario, quiero utilizar una aplicación de lista de tareas para organizar y realizar un seguimiento eficiente de mis actividades diarias. 
+La aplicación debe tener las siguientes características clave:
+
+Adición de Tareas:
+Como usuario, quiero poder agregar nuevas tareas a mi lista.
+Al hacer clic en el botón "Agregar", se debe abrir un formulario o modal que permita ingresar el título de la tarea, una descripción opcional, seleccionar la prioridad y establecer una fecha de vencimiento.
+Después de ingresar la información, quiero poder guardar la tarea para que aparezca en la lista principal.
+
+Eliminación de Tareas:
+Como usuario, quiero poder eliminar tareas que ya no son relevantes o han sido completadas.
+Al hacer clic en el botón "Eliminar" junto a una tarea en la lista, quiero confirmar la eliminación antes de que la tarea sea eliminada permanentemente.
+
+Actualización de Tareas:
+Como usuario, quiero poder actualizar la información de una tarea existente.
+Al hacer clic en el botón "Actualizar" junto a una tarea en la lista, se debe abrir un formulario o modal que me permita modificar el título, la descripción, la prioridad o la fecha de vencimiento de la tarea.
+Después de realizar las modificaciones, quiero poder guardar los cambios para actualizar la tarea en la lista.
+
+Marcar Tarea como Realizada:
+Como usuario, quiero poder marcar una tarea como realizada cuando la haya completado.
+Al hacer clic en el botón "Marcar como Realizada" junto a una tarea en la lista, la tarea debe cambiar su estado a "realizada". La tarea completada podría mostrarse de manera diferente en la interfaz para indicar su estado.
+
+Visualización de Tareas en una Tabla:
+Como usuario, quiero ver mis tareas organizadas en una tabla con tres columnas: Título, Prioridad y Fecha de Vencimiento.
+La tabla debe mostrar hasta tres tareas a la vez, y si hay más tareas, se debe proporcionar una opción de navegación para ver el resto de la lista.
+La información en la tabla debe estar claramente presentada para facilitar la comprensión y priorización de las tareas.
+
+Barra de Navegación:
+Como usuario, quiero una barra de navegación clara que me permita cambiar fácilmente entre las diferentes secciones de la aplicación.
+La barra de navegación debe incluir enlaces a la lista de tareas y a cualquier otra sección relevante de la aplicación.
