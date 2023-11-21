@@ -1,5 +1,5 @@
 var isCompleted = false;
-
+/*
 function markTaskAsCompleted() {
 	isCompleted = true;
 }
@@ -7,7 +7,7 @@ function markTaskAsCompleted() {
 function martTaskAsCompleted() {
 	isCompleted = !isCompleted;
 }
-
+*/
 function toggleTaskCompleted() {
 	isCompleted = !isCompleted;
 }
