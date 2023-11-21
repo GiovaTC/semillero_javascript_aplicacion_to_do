@@ -1,17 +1,8 @@
 //var isCompleted = false;
 
-function markTaskAsCompleted() {
-	isCompleted = true;
-}
-
-function martTaskAsCompleted() {
-	isCompleted = !isCompleted;
-}
-
 function toggleTaskCompleted(index) {
-    tasks[index].isCompleted = !tasks[index].isCompleted;
+	tasks[index].isCompleted = !tasks[index].isCompleted;
 }
-
 
 var tasks = [
 	{
@@ -33,9 +24,9 @@ var tasks = [
   toggleTaskCompleted(2);
   
   console.log( tasks );
-
+  
   function deleteTask(index) {
-    tasks.splice(index, 1);
+	tasks.splice(index, 1);
 }
 
 deleteTask(1);
