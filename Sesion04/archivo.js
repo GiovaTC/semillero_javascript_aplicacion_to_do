@@ -3,7 +3,7 @@
 function toggleTaskCompleted(index) {
 	tasks[index].isCompleted = !tasks[index].isCompleted;
 }
-
+/*
 var tasks = [
 	{
 	  description: 'Some task to do',
@@ -18,7 +18,7 @@ var tasks = [
 	  isCompleted: false
 	}
   ]
-
+*/
   toggleTaskCompleted(0);
 
   toggleTaskCompleted(2);
