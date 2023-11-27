@@ -1,34 +1,53 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Reto 2: Crear una tabla</title>
+  </head>
+  <body>
+    <h1>Mountains</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Document</title>
-</head>
+    <div id="mountains"></div>
 
-<body>
-    <h1>Document Object Model</h1>
-    <!-- <p>Hello World!</p>
-    <p>Here is a
-      <a href="#">link</a>
-    </p> -->
-    <a href="">otro a</a>
-    <a href="">3</a>
+    <script>
+      var data = [
+        {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+        {name: "Everest", height: 8848, place: "Nepal"},
+        {name: "Mount Fuji", height: 3776, place: "Japan"},
+        {name: "Vaalserberg", height: 323, place: "Netherlands"},
+        {name: "Denali", height: 6168, place: "United States"},
+        {name: "Popocatepetl", height: 5465, place: "Mexico"},
+        {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+      ];
+      function buildTable(data) {
+        var table = document.createElement("table");
+        var fields = Object.keys(data[0]);
 
+        // Crear la fila de encabezado (thead)
+        var headRow = document.createElement("tr");
+        fields.forEach(function(field) {
+          var headCell = document.createElement("th");
+          headCell.appendChild(document.createTextNode(field));
+          headRow.appendChild(headCell);
+        });
+        table.appendChild(headRow);
 
-    <section class="s1">s1</section>
-    <section class="s2">s2</section>
-    <section class="s3">s3</section>
-    <section id="s4" class="s4">s4</section>
+        // Crear el cuerpo de la tabla (tbody)
+        data.forEach(function(object) {
+          var row = document.createElement("tr");
+          fields.forEach(function(field) {
+            var cell = document.createElement("td");
+            cell.appendChild(document.createTextNode(object[field]));
+            if (typeof object[field] === "number") {
+              cell.style.textAlign = "right";
+            }
+            row.appendChild(cell);
+          });
+          table.appendChild(row);
+        });
 
-    <p>One</p>
-    <p>Two</p>
-    <p>Three</p>
-    <a id="link">Some cool link</a>
-
-    <!-- <script src="index.js"></script> -->
-    <script src="index.js"></script>
-</body>
-
+        return table;
+      }
+      document.getElementById("mountains").appendChild(buildTable(data));
+    </script>
+  </body>
 </html>
