@@ -5,18 +5,18 @@ var tasks = [];
 function addTask() {
   // Obtener el elemento de entrada de la tarea
   var taskInput = document.getElementById('taskInput');
-   // Obtener la descripción de la nueva tarea
+  // Obtener la descripción de la nueva tarea
   var newTaskDescription = taskInput.value;
- // Verificar que la descripción no esté vacía antes de agregar la tarea
+  // Verificar que la descripción no esté vacía antes de agregar la tarea
   if (newTaskDescription.trim() !== '') {
     tasks.push({
       description: newTaskDescription,
       isCompleted: false,
       date: new Date().toLocaleDateString()  
     });
-  // Renderizar la lista de tareas actualizada
+    // Renderizar la lista de tareas actualizada
     renderTasks();
-  // Limpiar el campo de entrada de tarea después de agregarla
+    // Limpiar el campo de entrada de tarea después de agregarla
     taskInput.value = ''; 
   }
 }
@@ -60,4 +60,8 @@ function renderTasks() {
 
 
 renderTasks();
+
+// Agregar el event handler al botón
+var addTaskButton = document.getElementById('addTaskButton');
+addTaskButton.addEventListener('click', addTask);
  
